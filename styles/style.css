@@ -1,93 +1,135 @@
+a {
+  color: #F5F5F5;
+}
+
 .header {
   justify-content: space-between;
   padding: 24px 20px;
+
+  .logo {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+
+  }
+
+  .links {
+    gap: 12px;
+
+    .main_link {
+      text-decoration: none;
+    }
+  }
 }
 
-.logo {
-  font-family: 'Inter bold';
-}
-
-.links {
-  gap: 12px;
-}
 section {
   padding-inline: 20px;
 }
-.first {
-  position: relative;
+
+.new_list {
+  background-image: url('../images/triangle.png'), url('../images/circle.png');
+  background-repeat: no-repeat, no-repeat;
+  background-position: 265px 32px, 20px 110px;
   
   .name {
-    position: relative;
-    z-index: 5;
-    font-family: 'EB Garamond regular';
+    font-family: 'EB Garamond';
+    font-weight: 400;
     font-size: 72px;
-  }
 
-  img {
-    width: 120px;
-    position: absolute;
-    z-index: 1;
-  }
-
-  .triangle {
-    right: 0;
-    top: 30px;
-  }
-  .circle {
-    top: 130px;
+    .center_text {
+      text-align: center;
+      line-height: 48px;
+    }
+    .end_text {
+      text-align: end;
+      letter-spacing: 1px;
+    }
   }
 }
 
-.second {
-  padding-top: 30px;
-  padding-bottom: 38px;
+.introduction {
+  padding-block: 25px 38px;
 
   .title {
     display: flex;
     color: #ccc;
+    font-size: 16px;
+    line-height: 19.2px;
+    letter-spacing: -0.3px;
+
+    .title_date {
+      text-wrap: nowrap;
+    }
   }
   
   .text {
+    line-height: 21.6px;
     color: #F5F5F5;
     padding-top: 24px;
     gap: 24px;
   }
 }
 
-.third {
+.yellow_list {
   gap: 32px;
   padding-block: 40px;
 
   .title {
-    font-family: 'EB Garamond regular';
+    font-family: 'EB Garamond', serif;
+    font-weight: 400;
     font-size: 28px;
+    line-height: 31px;
+    letter-spacing: 0.5px;
+
+    .title_end {
+      text-align: end;
+    }
+  }
+
+  .paragraph {
+    font-size: 20px;
+    line-height: 27px;
   }
 
   .list {
-    gap: 20px;
+    line-height: 21.6px;
+    gap: 16px;
     padding-left: 16px;
 
     .item {
-      font-family: 'Inter bold';
+      font-family: 'Inter', sans-serif;
+      font-weight: 700;
     }
   }
 }
 
-.fourth {
+.quotations {
   gap: 32px;
   padding-block: 40px 60px;
   color: #F5F5F5;
+  border-bottom: 1px solid #FEE42A;
 
   .title {
-    font-family: 'EB Garamond regular';
+    font-family: 'EB Garamond', serif;
+    font-weight: 400;
     font-size: 28px;
+    line-height: 32.3px;
+    letter-spacing: 0.5px;
+
+    .title-end {
+      text-align: end;
+    }
+  }
+
+  .quotations_paragraph {
+    line-height: 27px;
+    font-size: 20px;
   }
 
   .cards_container {
     gap: 32px;
     
-    .card {
-      gap: 8px;
+    .card, .yellow_card {
       border-radius: 30px;
       padding: 20px;
 
@@ -96,18 +138,26 @@ section {
       }
 
       .card_name {
-        font-family: 'Inter bold';
+        font-family: 'Inter', sans-serif;
+        font-weight: 700;
       }
       .card_header {
-        font-family: 'EB Garamond regular';
+        font-family: 'EB Garamond', serif;
+        font-weight: 400;
         font-size: 22px;
+        letter-spacing: 0.4px;
+      }
+      .card_paragraph {
+        line-height: 21.6px;
       }
     }
+    .card {
+      gap: 9px;
+    }
+    .yellow_card {
+      gap: 10px;
+    }
   }
-}
-
-hr {
-  border-color: #FEE42A;
 }
 
 .footer {
@@ -116,6 +166,11 @@ hr {
   color: #F5F5F5;
 
   .footer_links {
+    font-size: 14px;
     gap: 16px;
+
+    a {
+      text-decoration: none;
+    }
   }
 }

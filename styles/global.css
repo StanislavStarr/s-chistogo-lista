@@ -7,13 +7,10 @@ body {
   display: flex;
   flex-direction: column;
   background-color: #1e1e1e;
-  font-family: 'Inter regular', 'EB Garamond regular', 'sans-serif';
+  font-family: 'Inter', 'EB Garamond', sans-serif;
+  font-weight: 400;
   width: 360px;
   height: 100%;
-  color: #F5F5F5;
-}
-
-a {
   color: #F5F5F5;
 }
 
